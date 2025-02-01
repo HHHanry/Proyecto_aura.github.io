@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NanoApp - Valida Datos</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles_selfie.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <link rel="icon" href="img/logo.png" type="image/png">
+    </head>
+    <body>
+       <header class="header_class">
+         <div container>
+             <a class ="imagen_class" href="index.html"><img src="img/logo.png"></a>
+         </div>
+        </header><!-- /header -->
+          
+          <div class="container">
+            <h2>Ingresa tus datos bancarios y valídalos</h2>
+
+            <!-- Sección para ingresar cuenta bancaria -->
+            <div class="input-container">
+                <i class="fa-solid fa-piggy-bank"></i></i></i><label for="cuenta">Ingresa tu cuenta bancaria</label>
+                <input type="text" id="cuenta" name="cuenta" maxlength="14" placeholder="Cuenta bancaria" required>
+            </div>
+
+            <!-- Sección para cargar imagen del DNI -->
+            <div class="input-container">
+               <i class="fa-solid fa-id-card"></i> <label for="dni_frontal">Carga la foto de tu DNI</label>
+                <P>De manera frontal</P>
+                <input type="file" id="dni_frontal" name="dni_frontal" accept="image/*" required>
+            </div>
+
+            <div class="input-container">
+               <i class="fa-solid fa-id-card"></i> <label for="dni_atras">Carga la foto de tu DNI</label>
+                <p>De forma trasera</p>
+              <input type="file" id="dni_atras" name="dni_atras" accept="image/*" required>
+            </div>
+
+            <!-- Sección para cargar imagen de la cara -->
+            <div class="input-container">
+             <i class="fa-solid fa-user-large"></i>   <label for="foto_cara">Valida tu identidad</label>
+               <p>Evita usar accesorios que impidan la verificación de tu rostro</p>
+               <input type="file" id="foto_cara" name="foto_cara" accept="image/*" required>
+            </div>
+
+            <!-- Botón de envío -->
+            <button onclick="window.location.href='inicio.html';"class="boton_submit" type="submit" href="selfie.html">Continuar</butto>
+
+         </div>
+    </body>
+    </html>

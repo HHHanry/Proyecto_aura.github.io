@@ -1,0 +1,102 @@
+  body {
+           
+          
+        }
+
+        .libro-reclamaciones{
+            padding: 50px;
+        }
+               .form-container {
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            padding: 40px;
+            margin: 0;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: auto;
+            align-items: center;
+            animation: fadeIn 1s ease-in-out;
+            border: 2px solid #1e3c72;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        label {
+            font-size: 18px;
+            color: #2c3e50;
+            font-weight: bold;
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+
+        }
+        input, textarea {
+            width: 95%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+            background: rgba(187, 222, 251, 0.2);
+            display: flex;
+            justify-content: center;
+            margin-top: 4px;
+        }
+        input:focus, textarea:focus {
+            border-color: #1e3c72;
+            box-shadow: 0 4px 10px rgba(30, 60, 114, 0.3);
+            outline: none;
+            background: rgba(187, 222, 251, 0.4);
+        }
+        .form-container button {
+            background: #1e3c72;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            width: 100%;
+        }
+        .form-container button:hover {
+            background: #163b7a;
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(30, 60, 114, 0.4);
+        }
+        .form-title {
+            text-align: center;
+            color: #1e3c72;
+            margin-bottom: 20px;
+
+        }
+        i {
+            color: #2a5298;
+            margin-right: 8px;
+            padding: 5ox;
+        }
+        @media(max-width:480px){
+            .libro-reclamaciones{
+                display: flex;
+                padding: 50px 20px;
+            }
+            .form-container{
+                margin: auto;
+                padding: 35px 35px 35px 35px;
+            }
+             input, textarea{
+                width: 90%;
+             }
+        }
+         @media(max-width:360px){
+           
+            .form-container{
+                margin: auto;
+                padding: 20px;
+            }
+
+        }

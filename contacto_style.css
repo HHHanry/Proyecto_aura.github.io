@@ -1,0 +1,84 @@
+/* Estilos generales */
+
+
+/* Contenedor principal */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido del formulario */
+    border-radius: 15px;
+   padding: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+margin: auto;  
+justify-content: center; 
+
+}
+
+/* Título */
+.form{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0;
+}
+.form-title {
+    text-align: center;
+    color: #00aaff; /* Color celeste */
+    margin-bottom: 20px;
+}
+
+/* Contenedor del formulario */
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+/* Grupos de entradas */
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Etiquetas */
+.input-label {
+    font-size: 14px;
+    color: #00aaff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Campos de entrada */
+.input-field {
+    width: 100%;
+    padding: 10px 10px;
+    border: 2px solid #00aaff; /* Borde celeste */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo translúcido */
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+}
+
+.input-field:focus {
+    border-color: #0099cc;
+    outline: none;
+}
+
+/* Botón de envío */
+.submit-button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+
+}
+
+.submit-button:hover {
+    background-color: #0099cc;
+}

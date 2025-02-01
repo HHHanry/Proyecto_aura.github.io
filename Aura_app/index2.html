@@ -1,0 +1,54 @@
+	<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NanoApp - Datos</title>
+        <link rel="stylesheet" href="styles2.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <link rel="icon" href="img/logo.png" type="image/png">
+    </head>
+    <body>
+         <header class="header_class">
+         <div container>
+             <a class ="imagen_class" href="index.html"><img src="img/logo.png"></a>
+            <h1> Ya está estás casi list@</h1>
+            <h2>Ingrese su datos correctamente para finalizar</h2>
+           <br>
+         </div>
+        </header><!-- /header -->
+        <main class="main_class">
+            <div class="container_form">
+              <form class="form_class" action="#" method="POST">
+                 <div class="input_class input__servicio">
+                    <label for="comprobante_servicio">Comprobante de pago de servicio (agua, luz):</label>
+                    <i class="fa-solid fa-file-invoice"></i>
+                    <input type="file" id="comprobante_servicio" name="comprobante_servicio" accept="image/*,application/pdf" required>
+                    <small class="small_input">Debe ser reciente (no más de 3 meses de antigüedad).</small>
+                </div>
+                <br>
+                <div class="input_class">
+                    <label for="boleta_compras">Boleta de compras del negocio:</label>
+                    <i class="fa-solid fa-file-alt"></i>
+                    <input type="file" id="boleta_compras" name="boleta_compras" accept="image/*,application/pdf" required>
+                </div>
+                <br>
+                <div class="input_class">
+                    <label for="foto_local">Fotografía del local:</label>
+                    <i class="fa-solid fa-camera"></i>
+                    <input type="file" id="foto_local" name="foto_local" accept="image/*" required>
+                    <small class="small_input">El cliente debe también obligatoriamente aparecer en la fotografía.</small>	
+                </div>
+
+                <br>
+                
+                <div>
+                   <button onclick="window.location.href='selfie.html';" class="boton_submit" id="btn-continuar" type="button">Continuar</button>
+                </div>              
+            </div>
+         </main> 
+
+    </body>
+     <script src="script.js"></script>
+    </html>	

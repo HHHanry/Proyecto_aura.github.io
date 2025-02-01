@@ -1,0 +1,103 @@
+	<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NanoYA - Preguntas Frecuentes</title>
+        <link rel="stylesheet" href="styles.css">
+         <link rel="stylesheet" href="preguntas_style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+            <link rel="icon" href="img/logo.png" type="image/png">
+
+    </head>
+    <body>
+    <!-- Navbar -->
+     <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html"><img src="img/logo.png" alt="Logo" class="navbar__logo"></a>
+            <button class="hamburger-menu" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark"></i>
+                <span></span>   
+                 <span></span>   
+                  <span></span>   
+                   <span></span>   
+            </button>
+            <div class="secciones_botones">
+                <ul class="clase_ul">
+                    <li class="clase_li"><a href="nosotros.html">Nosotros </a></li>
+                   <li class="clase_li"><a href="cumplimientos.html">Cumplimientos</a></li>
+                    <li class="clase_li login" ><a href="contactanos.html">Contacto</a></li>
+                </ul>
+                
+            </div>
+        </div>
+         <div class="overlay"></div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    
+<div class="faq-preguntas">
+     <div class="faq-container">
+        <h2 style="text-align: center; color: #1e3c72;"><i class="fas fa-question-circle"></i> Preguntas Frecuentes</h2>
+        
+        <div class="faq-item" onclick="toggleAnswer(1)">
+            <div class="faq-question"><i class="fas fa-money-bill-wave"></i> ¿Cuál es el monto máximo que puedo solicitar?</div>
+            <div class="faq-answer" id="answer-1">NanoYa ofrece préstamos de hasta 500 soles, ideales para necesidades urgentes o imprevistos.</div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(2)">
+            <div class="faq-question"><i class="fas fa-calculator"></i> ¿Cómo calculan los intereses y comisiones?</div>
+            <div class="faq-answer" id="answer-2">El interés es del 5% sobre el monto solicitado, más una comisión fija de 2 soles, asegurando transparencia en cada préstamo.</div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(3)">
+            <div class="faq-question"><i class="fas fa-list-check"></i> ¿Qué requisitos debo cumplir para acceder a un préstamo?</div>
+            <div class="faq-answer" id="answer-3">Debes ser mayor de 18 años, contar con un DNI vigente y tener un número de celular activo para poder contactarte.</div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(4)">
+            <div class="faq-question"><i class="fas fa-clock"></i> ¿Cuánto tiempo tarda en aprobarse mi solicitud?</div>
+            <div class="faq-answer" id="answer-4">Una vez completada la solicitud, la evaluación es rápida y recibirás respuesta en menos de 24 horas.</div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(5)">
+            <div class="faq-question"><i class="fas fa-credit-card"></i> ¿Cómo puedo realizar el pago de mi préstamo?</div>
+            <div class="faq-answer" id="answer-5">Puedes pagar mediante transferencia bancaria, agentes autorizados o directamente desde nuestra plataforma en línea.</div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+   <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column">
+                <a href="cumplimientos.html" class="footer__link">Cumplimientos</a>
+                <a href="nosotros.html" class="footer__link">Sobre Nosotros</a>
+            </div>
+            <div class="footer__column">
+                <a href="preguntas.html" class="footer__link">Preguntas Frecuentes</a>
+                <a href="libroreclamaciones.html" class="footer__link">Libro de Reclamaciones</a>
+            </div>
+            <div class="footer__column">
+                <a href="contactanos.html" class="footer__link">Contacto</a>
+                <a href="contactanos.html" class="footer__link">Redes Sociales</a>
+            </div>
+            
+          
+        </div>
+         <p>&copy; 2024 Todos los derechos reservados.</p>
+          <div class="social-links">
+                    <ul class="redes-sociales">
+                        <li class="red-social"><a href="https://www.facebook.com/share/1UBAgrKJDo/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="red-social"><a href="https://wa.me/+51998162312" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                 
+                    </ul>
+          </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="preguntas.js"></script>
+ <script src="hamburguesa.js"></script>  
+    </html>

@@ -1,0 +1,84 @@
+
+        .faq-preguntas{
+            padding: 50px;
+        }
+         .faq-container {
+            width: 95%;
+            max-width: 70%;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            animation: fadeIn 1s ease-in-out;
+            margin: auto;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .faq-item {
+            padding: 20px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        .faq-item::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        .faq-item:hover::before {
+            left: 100%;
+        }
+        .faq-item:hover {
+            background: rgba(187, 222, 251, 0.6);
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            border-color: #1e3c72;
+        }
+        .faq-question {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        .faq-item:hover .faq-question {
+            color: #1e88e5;
+        }
+        .faq-answer {
+            font-size: 18px;
+            color: #34495e;
+            display: none;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-item i{
+            padding: 10px;
+        }
+        @media (max-width:480px){
+             .faq-preguntas{
+            padding: 40px 30px;
+            display: flex;
+        }
+            .faq-container{
+                max-width: 100%;
+                margin: auto;
+                padding: 20px;
+            }
+        }

@@ -1,0 +1,53 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NanoApp - Ingresa</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <link rel="icon" href="img/logo.png" type="image/png">
+    </head>
+    <body>
+         <header class="header_class">
+             <div container>
+                 <a class ="imagen_class" href="index.html"><img src="img/logo.png"></a>
+                <h1> Bienvenido a "NanoYA"</h1>
+                <h2>Ingrese su datos correctamente</h2>
+                <p>Solicita tu préstamo ¡YA!</p>
+             </div>
+        </header><!-- /header -->
+        
+        <main class="main_class">
+            <div class="container_form">
+              <form class="form_class" action="#" method="POST">
+                <div class="input_class">
+                    <label for="nombre">Nombre de usuario</label>
+                   <i class="fa-solid fa-user"></i> <input type="name" id="name" name="name" maxlength="15" placeholder="Ingrese su nombre de usuario">
+                </div>
+                <br>
+                <div class="input_class">
+                    <label for="celular">Número de Celular:</label>
+                   <i class="fa-solid fa-phone"></i> <input type="tel" id="celular" name="celular" required pattern="\d{9}" maxlength="9" placeholder="Ingrese su número de celular">
+                </div>
+                <br>
+               <div class="input_class">
+                    <label for="correo">Correo Electrónico:</label>
+                    <i class="fa-solid fa-envelope"></i><input type="email" id="correo" name="correo" required placeholder="Ingrese su correo electrónico">
+                </div>
+                <br>
+               <div class="input_class">
+                    <label for="dni">DNI:</label>
+                   <i class="fa-solid fa-id-card"></i> <input type="text" id="dni" name="dni" required pattern="\d{8}" maxlength="8"  placeholder="Ingrese su DNI">
+                </div>
+                <br>
+                <div>
+                   <button onclick="window.location.href='index2.html';" class="boton_submit" type="button">Continuar</button>
+                </div>              
+            </div>
+         </main> 
+
+    </body>
+     <script src="script.js"></script>
+    </html>
