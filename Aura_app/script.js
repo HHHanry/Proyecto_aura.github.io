@@ -89,3 +89,4 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("El botón con id 'btn-continuar' no se encontró.");
   }
 });
+

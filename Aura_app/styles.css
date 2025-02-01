@@ -10,6 +10,9 @@ body{
 	display: flex;
 
 }
+label{
+	text-align: center;
+}
 	.imagen_class img{
 		width: 100%;
 	}
@@ -70,6 +73,9 @@ body{
 	letter-spacing: 1.3px;
 	box-shadow: 0 1px 0px rgba(0, 0, 0, 0.3);
 	margin: 20px auto 100px; 
+}
+.input_class i {
+   margin-top: 2px;
 }
 @media (max-width:480px) {
 	body{
